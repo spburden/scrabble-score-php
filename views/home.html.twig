@@ -5,6 +5,14 @@
         <title></title>
     </head>
     <body>
+        <form class="" action="/result" method="post">
+            <label for="">Enter a word:</label>
+            <input type="text" name="input_word" value="" required>
+            <button type="submit" name="button">PLAY</button>
+        </form>
+        {% if score%}
+        <h2> {{score}} </h2>
+        {% endif %}
 
     </body>
 </html>

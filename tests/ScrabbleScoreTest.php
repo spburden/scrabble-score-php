@@ -14,12 +14,14 @@
         }
         function test_getWordScore(){
             $test_getWordScore = new ScrabbleScore;
-            $word = "AB";
+            $word = "rqhrjkqhrjkhq";
 
             $output = $test_getWordScore->getWordScore($word);
 
-            $this->assertEquals(4, $output);
+            $this->assertEquals("An imaginary scrabble letter has been entered, TRY AGAIN!", $output);
         }
+
+
     }
         // export PATH=$PATH:./vendor/bin first and then you will only have to run $ phpunit tests
 
